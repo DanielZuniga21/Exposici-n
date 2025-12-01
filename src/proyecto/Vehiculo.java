@@ -76,14 +76,14 @@ public String toString() {
 //metodos propios
 public void registrarViaje(int km) {
         this.kilometraje += km;
-        System.out.println("Se registraron " + km + " km en " + placa);
+        System.out.println("Se registraron " + km + " km en " + modelo);
     }
  public boolean requiereServicio() {
-      if(this.kilometraje >= 10000) {
-            System.out.println("El vehículo " + placa + " requiere servicio.");
+      if(this.kilometraje >= 19000) {
+            System.out.println("El vehiculo " + placa + " requiere servicio.");
             return true;
         } else {
-            System.out.println("El vehículo " + placa + " no requiere servicio.");
+            System.out.println("El vehiculo " + placa + " no requiere servicio.");
             return false;
         }
     }
