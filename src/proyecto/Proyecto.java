@@ -16,7 +16,7 @@ public class Proyecto {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-         Scanner entrada = new Scanner(System.in);
+        Scanner entrada = new Scanner(System.in);
 
         // Creacion de vehículos
         Vehiculo v1 = new Vehiculo("ABC123", "Toyota", "Corolla", 2020, 9000, "Auto");
@@ -42,13 +42,11 @@ public class Proyecto {
 
         Conductor[] conductores = {c1, c2, c3, c4, c5, c6, c7, c8};
 
-       
         System.out.println("---Lista de conductores---");
         for (int i = 0; i < conductores.length; i++) {
             System.out.println(conductores[i]);
         }
 
-       
         System.out.println("\n---Lista de vehiculos---");
         for (int i = 0; i < vehiculos.length; i++) {
             System.out.println(vehiculos[i]);

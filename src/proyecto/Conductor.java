@@ -9,13 +9,14 @@ package proyecto;
  * @author zunig
  */
 public class Conductor {
-      // 6 atributos
- private String identidad;
+    // 6 atributos
+
+    private String identidad;
     private String Nombre;
     private String licencia;
     private int aniosexperiencia;
     private String telefono;
-    private Vehiculo vehiculoasignado; // AHORA ES OBJETO
+    private Vehiculo vehiculoasignado;
 
     // Constructor no default
     public Conductor(String identidad, String Nombre, String licencia, int aniosexperiencia, String telefono, Vehiculo vehiculoasignado) {
@@ -28,16 +29,18 @@ public class Conductor {
     }
 
     // Getters y setters
-    public String getIdentidad() { 
+    public String getIdentidad() {
         return identidad;
     }
+
     public void setIdentidad(String identidad) {
-        this.identidad = identidad; 
+        this.identidad = identidad;
     }
 
     public String getNombre() {
-        return Nombre; 
+        return Nombre;
     }
+
     public void setNombre(String Nombre) {
         this.Nombre = Nombre;
     }
@@ -45,6 +48,7 @@ public class Conductor {
     public String getLicencia() {
         return licencia;
     }
+
     public void setLicencia(String licencia) {
         this.licencia = licencia;
     }
@@ -52,26 +56,31 @@ public class Conductor {
     public int getAniosexperiencia() {
         return aniosexperiencia;
     }
+
     public void setAniosexperiencia(int aniosexperiencia) {
-        this.aniosexperiencia = aniosexperiencia; 
+        this.aniosexperiencia = aniosexperiencia;
     }
 
-    public String gettelefono() { 
-        return telefono; 
+    public String gettelefono() {
+        return telefono;
     }
+
     public void settelefono(String telefono) {
-        this.telefono = telefono; 
+        this.telefono = telefono;
     }
 
     public Vehiculo getVehiculoasignado() {
-        return vehiculoasignado; 
+        return vehiculoasignado;
     }
-    public void setVehiculoasignado(Vehiculo vehiculoasignado) { this.vehiculoasignado = vehiculoasignado; }
+
+    public void setVehiculoasignado(Vehiculo vehiculoasignado) {
+        this.vehiculoasignado = vehiculoasignado;
+    }
 
     public String toString() {
-        return "Conductor [identidad=" + identidad + ", nombre=" + Nombre + ", licencia=" + licencia +
-               ", añosExperiencia=" + aniosexperiencia + ", telefono=" + telefono +
-               ", vehiculoAsignado=" + vehiculoasignado.getPlaca() + "]";
+        return "Conductor [identidad=" + identidad + ", nombre=" + Nombre + ", licencia=" + licencia
+                + ", añosExperiencia=" + aniosexperiencia + ", telefono=" + telefono
+                + ", vehiculoAsignado=" + vehiculoasignado.getPlaca() + "]";
     }
 
     //metodos propios
@@ -84,4 +93,3 @@ public class Conductor {
         System.out.println(this.toString());
     }
 }
-

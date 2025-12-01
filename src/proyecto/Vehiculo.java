@@ -9,7 +9,8 @@ package proyecto;
  * @author zunig
  */
 public class Vehiculo {
-   // 6 atributos
+    // 6 atributos
+
     private String placa;
     private String marca;
     private String modelo;
@@ -26,60 +27,69 @@ public class Vehiculo {
         this.kilometraje = kilometraje;
         this.tipo = tipo;
     }
-     // Getters y setters
+    // Getters y setters
+
     public String getPlaca() {
         return placa;
     }
+
     public void setPlaca(String placa) {
-        this.placa = placa; 
+        this.placa = placa;
     }
 
     public String getMarca() {
-        return marca; 
+        return marca;
     }
-    public void setMarca(String marca) { 
+
+    public void setMarca(String marca) {
         this.marca = marca;
     }
 
     public String getModelo() {
-        return modelo; 
+        return modelo;
     }
+
     public void setModelo(String modelo) {
         this.modelo = modelo;
     }
-     public int getAnio() { 
-         return anio; 
-     }
+
+    public int getAnio() {
+        return anio;
+    }
+
     public void setAnio(int anio) {
-        this.anio = anio; 
+        this.anio = anio;
     }
 
     public int getKilometraje() {
         return kilometraje;
     }
+
     public void setKilometraje(int kilometraje) {
         this.kilometraje = kilometraje;
     }
 
     public String getTipo() {
-        return tipo; 
-    }
-    public void setTipo(String tipo) { 
-        this.tipo = tipo; 
+        return tipo;
     }
 
-public String toString() {
-        return "Vehiculo [placa=" + placa + ", marca=" + marca + ", modelo=" + modelo + ", año=" + anio +
-                ", km=" + kilometraje + ", tipo=" + tipo + "]";
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    public String toString() {
+        return "Vehiculo [placa=" + placa + ", marca=" + marca + ", modelo=" + modelo + ", año=" + anio
+                + ", km=" + kilometraje + ", tipo=" + tipo + "]";
     }
 
 //metodos propios
-public void registrarViaje(int km) {
+    public void registrarViaje(int km) {
         this.kilometraje += km;
         System.out.println("Se registraron " + km + " km en " + modelo);
     }
- public boolean requiereServicio() {
-      if(this.kilometraje >= 19000) {
+
+    public boolean requiereServicio() {
+        if (this.kilometraje >= 19000) {
             System.out.println("El vehiculo " + placa + " requiere servicio.");
             return true;
         } else {
@@ -87,6 +97,4 @@ public void registrarViaje(int km) {
             return false;
         }
     }
- }
-    
-
+}
