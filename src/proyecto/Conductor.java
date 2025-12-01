@@ -28,22 +28,44 @@ public class Conductor {
     }
 
     // Getters y setters
-    public String getIdentidad() { return identidad; }
-    public void setIdentidad(String identidad) { this.identidad = identidad; }
+    public String getIdentidad() { 
+        return identidad;
+    }
+    public void setIdentidad(String identidad) {
+        this.identidad = identidad; 
+    }
 
-    public String getNombre() { return Nombre; }
-    public void setNombre(String Nombre) { this.Nombre = Nombre; }
+    public String getNombre() {
+        return Nombre; 
+    }
+    public void setNombre(String Nombre) {
+        this.Nombre = Nombre;
+    }
 
-    public String getLicencia() { return licencia; }
-    public void setLicencia(String licencia) { this.licencia = licencia; }
+    public String getLicencia() {
+        return licencia;
+    }
+    public void setLicencia(String licencia) {
+        this.licencia = licencia;
+    }
 
-    public int getAniosexperiencia() { return aniosexperiencia; }
-    public void setAniosexperiencia(int aniosexperiencia) { this.aniosexperiencia = aniosexperiencia; }
+    public int getAniosexperiencia() {
+        return aniosexperiencia;
+    }
+    public void setAniosexperiencia(int aniosexperiencia) {
+        this.aniosexperiencia = aniosexperiencia; 
+    }
 
-    public String gettelefono() { return telefono; }
-    public void settelefono(String telefono) { this.telefono = telefono; }
+    public String gettelefono() { 
+        return telefono; 
+    }
+    public void settelefono(String telefono) {
+        this.telefono = telefono; 
+    }
 
-    public Vehiculo getVehiculoasignado() { return vehiculoasignado; }
+    public Vehiculo getVehiculoasignado() {
+        return vehiculoasignado; 
+    }
     public void setVehiculoasignado(Vehiculo vehiculoasignado) { this.vehiculoasignado = vehiculoasignado; }
 
     public String toString() {
